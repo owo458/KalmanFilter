@@ -20,7 +20,7 @@ LFLAGS =-Wl,-rpath-link=$(LIB_DIR) -L$(LIB_DIR)
 LFLAGS +=`pkg-config opencv --cflags --libs`  
 LFLAGS +=`pkg-config opencv4 --cflags --libs`
 
-OBJS = #main.o #AvgFilter.o #KalmanFilter.o
+OBJS = MovAvgFilter.o #main.o #AvgFilter.o #KalmanFilter.o
 BUILD = build
 OBJDIR = obj
 TARGET = Kalman
